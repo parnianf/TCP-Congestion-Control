@@ -5,7 +5,7 @@ The aim of this project is to get acquainted with the function of `TCP` and to i
 
 In this topology, computer `A` sends a relatively large file to computer `B` through router `R`. Router `R` has a buffer in which incoming messages are stored and sent to the destination in `FIFO` form. Computers `A` and `B` and router `R` are considered independent processes. To send the file, the computer sends it in 1.5 KB packets through the **sliding-window** mechanism. `UDP-type` socket is used for the mentioned inter-process communication.
 
-In the second phase, we have 20 computers similar to computer `A` that send 1.5 KB packets to computer `B` through router `R`. In addition to the **Sliding-Window** mechanism, we implement the **Random Early Drop** congestion control mechanism to control network congestion.
+In the second part, we have 20 computers similar to computer `A` that send 1.5 KB packets to computer `B` through router `R`. In addition to the **Sliding-Window** mechanism, we implement the **Random Early Drop** congestion control mechanism to control network congestion.
 
 ## Go Back N Protocol (GBN)
 Go-Back-N ARQ is a specific instance of the automatic repeat request (ARQ)
