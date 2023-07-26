@@ -4,7 +4,7 @@ The aim of this project is to get acquainted with the function of `TCP` and to i
 <a href='https://www.linkpicture.com/view.php?img=LPic64c19653693f0523396033'><img src='https://www.linkpicture.com/q/Screenshot-4748.png' type='image' width=60%></a>
 
 
-In this topology, computer `A` sends a relatively large file to computer `B` through router `R`. Router `R` has a buffer in which incoming messages are stored and sent to the destination in `FIFO` form. To implement this exercise, consider each of computers `A` and `B` and router `R` as an independent process. To send the file, the computer sends it in 1.5 KB packets through the **sliding-window** mechanism. `UDP-type` socket is used for the mentioned inter-process communication.
+In this topology, computer `A` sends a relatively large file to computer `B` through router `R`. Router `R` has a buffer in which incoming messages are stored and sent to the destination in `FIFO` form. Computers `A` and `B` and router `R` are considered independent processes. To send the file, the computer sends it in 1.5 KB packets through the **sliding-window** mechanism. `UDP-type` socket is used for the mentioned inter-process communication.
 
 ## Go Back N Protocol (GBN)
 Go-Back-N ARQ is a specific instance of the automatic repeat request (ARQ)
